@@ -1,0 +1,20 @@
+### Variáveis de ambiente
+@base_url = http://127.0.0.1:8000
+
+### Teste de conexão com  a API
+GET {{base_url}}/ HTTP/1.1
+Accept: application/json
+
+### Criação de uma sériezrm 
+POST {{base_url}}/ HTTP/1.1
+Content-Type: application/json
+{
+    "titulo": "Rick and Morty",
+    "descrição": "Avô e neto em altas aventuras",
+    "ano_lancamento": 2013 
+}
+
+### Obtenção de todas as séries
+
+GET {{base_url}}/series HTTP/1.1
+Accept: application/json
